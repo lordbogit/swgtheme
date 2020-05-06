@@ -6,8 +6,9 @@
 	<?php wp_head();?>
 </head>
 <body <?php body_class();?>>
+	<section class="header">
 <header>
-<div class="container sticky-top" id="menu">
+<div class="container" id="menu">
 	<?php
 		wp_nav_menu(
 			array(
@@ -16,7 +17,8 @@
 			)
 		);
 	?>
-</div>
-<?php wp_link_pages( $args ); ?> 
-<div class="search-bar"><?php get_search_form();?></div>
+
+ 
+<div class="search-bar"><?php get_search_form();?></div></div>
 </header>
+</section>
